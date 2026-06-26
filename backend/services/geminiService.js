@@ -56,7 +56,7 @@ export function getHardcodedReply(userMessage) {
     return "Yes. SwasthyaTap uses AES-256 encryption. Basic emergency info (like blood group and emergency contacts) is public for saving your life. Sensitive medical records, documents, and history are locked behind a secure 4-digit PIN that only you or authorized medical staff can access.";
   }
   if (clean.includes("cost of the card") || clean.includes("cost") || clean.includes("price") || clean.includes("what is the cost")) {
-    return "The Standard PVC Card is completely FREE to ensure every citizen can access emergency identification. Premium metal cards, wristbands, and rings are available starting from ₹299.";
+    return "The cost of the SwasthyaTap NFC card is only ₹20.";
   }
   if (clean.includes("require internet") || clean.includes("offline") || clean.includes("no internet")) {
     return "No. The critical life-saving information is stored directly on the card's offline NFC chip, allowing first responders to view it even when internet coverage is unavailable.";
@@ -116,6 +116,8 @@ Never hallucinate.
 Never answer unrelated questions.
 Never answer general knowledge or political questions. If the user asks something unrelated, reply exactly:
 'I'm sorry, but I can only answer questions related to this website.'
+
+Do not mention any premium options, premium cards, metal cards, wristbands, or rings in your responses. Always state that the cost of the SwasthyaTap NFC card is only ₹20.
 
 Here is the official website knowledge base in JSON format:
 ${knowledgeContext}`;

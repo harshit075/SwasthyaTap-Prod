@@ -13,7 +13,6 @@ export default function Footer() {
     ],
     [t('footer.company')]: [
       { label: t('footer.about'), href: '/about' },
-      { label: t('footer.careers'), href: '/careers' },
       { label: t('footer.blog'), href: '/blog' },
       { label: t('footer.contact'), href: 'mailto:support@swasthtap.in' },
     ],

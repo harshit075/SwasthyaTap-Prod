@@ -57,7 +57,7 @@ export default function ChatWindow({
   };
 
   return (
-    <div className="flex flex-col h-[520px] sm:h-[600px] w-full sm:w-[400px] bg-white rounded-3xl shadow-[0_20px_50px_rgba(29,53,87,0.15)] border border-gray-100 overflow-hidden relative">
+    <div className="flex flex-col h-[calc(100vh-120px)] h-[calc(100dvh-120px)] sm:h-[600px] max-h-[520px] sm:max-h-none w-full sm:w-[400px] bg-white rounded-3xl shadow-[0_20px_50px_rgba(29,53,87,0.15)] border border-gray-100 overflow-hidden relative">
       
       {/* Header */}
       <div className="bg-gradient-to-r from-secondary to-slate-900 text-white px-5 py-4 flex items-center justify-between shadow-md">

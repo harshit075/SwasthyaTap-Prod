@@ -14,7 +14,7 @@ const HARDCODED_RESPONSES = {
     "Yes. SwasthyaTap uses AES-256 encryption. Basic emergency info (like blood group and emergency contacts) is public for saving your life. Sensitive medical records, documents, and history are locked behind a secure 4-digit PIN that only you or authorized medical staff can access.",
   
   "what is the cost of the card?":
-    "The Standard PVC Card is completely FREE to ensure every citizen can access emergency identification. Premium metal cards, wristbands, and rings are available starting from ₹299.",
+    "The cost of the SwasthyaTap NFC card is only ₹20.",
   
   "does it require internet to read the card?":
     "No. The critical life-saving information is stored directly on the card's offline NFC chip, allowing first responders to view it even when internet coverage is unavailable.",
@@ -290,11 +290,11 @@ export default function ChatWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4 font-sans">
+    <div className="fixed bottom-4 right-4 left-4 sm:left-auto sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-3 sm:gap-4 font-sans">
       
       {/* Chat Window */}
       {isOpen && (
-        <div className="animate-in fade-in slide-in-from-bottom-5 duration-300 origin-bottom-right">
+        <div className="w-full sm:w-auto animate-in fade-in slide-in-from-bottom-5 duration-300 origin-bottom-right">
           <ChatWindow
             messages={messages}
             isLoading={isLoading}
