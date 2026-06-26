@@ -24,7 +24,7 @@ export const languages: LanguageConfig[] = [
   { code: 'as', name: 'Assamese',   nativeName: 'অসমীয়া',      dir: 'ltr' },
 ];
 
-export const defaultLang: LangCode = 'hi';
+export const defaultLang: LangCode = 'en';
 
 export const fontMap: Record<string, string> = {
   hi: "'Noto Sans Devanagari', sans-serif",

@@ -7,6 +7,7 @@ const storyKeys = [
   { titleKey: 'testimonials.story1Title', quoteKey: 'testimonials.story1Quote', authorKey: 'testimonials.story1Author' },
   { titleKey: 'testimonials.story2Title', quoteKey: 'testimonials.story2Quote', authorKey: 'testimonials.story2Author' },
   { titleKey: 'testimonials.story3Title', quoteKey: 'testimonials.story3Quote', authorKey: 'testimonials.story3Author' },
+  { titleKey: 'testimonials.story4Title', quoteKey: 'testimonials.story4Quote', authorKey: 'testimonials.story4Author' },
 ];
 
 export default function Testimonials() {
@@ -28,18 +29,20 @@ export default function Testimonials() {
           <p className="mt-4 text-lg text-secondary/55">{t('testimonials.subtitle')}</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {storyKeys.map((s, i) => (
             <motion.div
               key={s.titleKey}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.1 }}
-              className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-md transition-all"
+              className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-md transition-all flex flex-col justify-between"
             >
-              <h3 className="font-bold text-primary mb-3">{t(s.titleKey)}</h3>
-              <p className="text-secondary/70 text-sm italic mb-4">&ldquo;{t(s.quoteKey)}&rdquo;</p>
-              <p className="text-sm font-medium text-secondary">&mdash; {t(s.authorKey)}</p>
+              <div>
+                <h3 className="font-bold text-primary mb-3">{t(s.titleKey)}</h3>
+                <p className="text-secondary/70 text-sm italic mb-4">&ldquo;{t(s.quoteKey)}&rdquo;</p>
+              </div>
+              <p className="text-sm font-medium text-secondary mt-auto">&mdash; {t(s.authorKey)}</p>
             </motion.div>
           ))}
         </div>

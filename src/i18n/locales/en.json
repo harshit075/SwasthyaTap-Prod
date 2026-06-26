@@ -104,9 +104,23 @@
     "basic": "Basic",
     "standard": "Standard",
     "enterprise": "Enterprise",
-    "basicFeatures": ["Patient identification", "Emergency data access", "Email support"],
-    "standardFeatures": ["Everything in Basic", "Blood donor API", "SMS integration", "Priority support"],
-    "enterpriseFeatures": ["Everything in Standard", "Custom integration", "Dedicated manager", "SLA guarantee"]
+    "basicFeatures": [
+      "Patient identification",
+      "Emergency data access",
+      "Email support"
+    ],
+    "standardFeatures": [
+      "Everything in Basic",
+      "Blood donor API",
+      "SMS integration",
+      "Priority support"
+    ],
+    "enterpriseFeatures": [
+      "Everything in Standard",
+      "Custom integration",
+      "Dedicated manager",
+      "SLA guarantee"
+    ]
   },
   "pricing": {
     "title": "Choose Your Card",
@@ -142,17 +156,20 @@
     "encryption": "AES-256 Encryption"
   },
   "testimonials": {
-    "title": "Stories That Matter",
-    "subtitle": "Real impact, real lives",
-    "story1Title": "The Golden Hour Save",
-    "story1Quote": "The auto driver was unconscious after the accident. A bystander tapped his SwasthyaTap card, his family was alerted within 30 seconds, and the hospital knew his blood type before he arrived.",
-    "story1Author": "Dr. Mehta, Trauma Surgeon",
-    "story2Title": "A Worker Identified",
-    "story2Quote": "Migrant workers have no records. With SwasthyaTap, we identified a patient within seconds instead of hours. His family in Bihar was called immediately.",
-    "story2Author": "Nurse Priya, District Hospital",
-    "story3Title": "Peace of Mind",
-    "story3Quote": "My father lives alone. Knowing that if anything happens, his card will alert us instantly gives our whole family peace of mind.",
-    "story3Author": "Rahul K., Bengaluru"
+    "title": "What People Think",
+    "subtitle": "Feedback on our emergency health identity concept",
+    "story1Title": "A Game-Changer Idea",
+    "story1Quote": "As a college student who rides a bike every day, the concept of a ₹20 card that holds emergency health details and offline alerts is a game-changer. It's affordable and can actually save lives. Can't wait to order one!",
+    "story1Author": "Hardik Batwal, Student & Biker",
+    "story2Title": "Physiotherapist Approved",
+    "story2Quote": "As a physiotherapist, I see people with sports injuries and sudden physical crises daily. An offline NFC card/wristband containing vital medical details and contacts is a brilliant concept for anyone with an active lifestyle.",
+    "story2Author": "Rohan Michal, Physio Therapist",
+    "story3Title": "Great Concept for Parents",
+    "story3Quote": "My elderly parents live in another city, and I constantly worry about their safety. A tap-to-read emergency card that doesn't need any app or internet setup is the most practical solution I've seen. This idea is highly needed.",
+    "story3Author": "Aditya Sharma, Tech Professional",
+    "story4Title": "Promising Emergency Solution",
+    "story4Quote": "The idea of using cheap, accessible NFC cards to create emergency health IDs for everyone in India is incredibly promising. It bypasses internet barriers entirely. If this scales, it will redefine emergency response.",
+    "story4Author": "Kanishk Gupta, Startup Volunteer"
   },
   "cta": {
     "title": "Get Your SwasthyaTap Card in 2 Minutes",
@@ -165,9 +182,9 @@
   },
   "footer": {
     "tagline": "India's NFC-Based Universal Emergency Health Identity Platform",
-    "byCompany": "By Kadel Labs Pvt Ltd",
+    "byCompany": "By SwasthyaTap",
     "madeFor": "Made with ♥ for 140 Cr Indians",
-    "copyright": "Kadel Labs Pvt Ltd. All rights reserved.",
+    "copyright": "SwasthyaTap. All rights reserved.",
     "product": "Product",
     "company": "Company",
     "legal": "Legal",
@@ -243,6 +260,6 @@
     "founder1Desc": "Driving the architectural design and secure offline-first NFC technology of SwasthyaTap.",
     "founder2Role": "Product Lead",
     "founder2Desc": "Leading the product strategy, hospital integration, and scaling the emergency network across India.",
-    "companyDesc": "Designed and developed by Kadel Labs Pvt Ltd. Committed to building secure, digital-first healthcare infrastructure for 140 Crore Indians."
+    "companyDesc": "Designed and developed by SwasthyaTap. Committed to building secure, digital-first healthcare infrastructure for 140 Crore Indians."
   }
 }

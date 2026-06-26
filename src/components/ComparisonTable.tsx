@@ -21,10 +21,10 @@ const solutions: { name: string; values: (string | boolean | null)[] }[] = [
 ];
 
 function StatusIcon({ value }: { value: boolean | null | string }) {
-  if (typeof value === 'string') return <span className="text-sm md:text-base font-bold text-secondary">{value}</span>;
-  if (value === true) return <Check className="text-success mx-auto" size={20} />;
-  if (value === false) return <X className="text-red-500 mx-auto" size={20} />;
-  return <Minus className="text-secondary/30 mx-auto" size={20} />;
+  if (typeof value === 'string') return <span className="text-[10px] sm:text-sm md:text-base font-bold text-secondary">{value}</span>;
+  if (value === true) return <Check className="text-success mx-auto" size={16} />;
+  if (value === false) return <X className="text-red-500 mx-auto" size={16} />;
+  return <Minus className="text-secondary/30 mx-auto" size={16} />;
 }
 
 export default function ComparisonTable() {
@@ -46,23 +46,32 @@ export default function ComparisonTable() {
           <p className="mt-3 text-base text-secondary/55">{t('comparison.subtitle')}</p>
         </motion.div>
 
-        <div className="text-[10px] text-secondary/40 font-bold uppercase tracking-widest mb-3 md:hidden flex items-center justify-center gap-1.5 select-none">
-          <span>Swipe horizontally to view comparison</span>
-          <span className="animate-bounce">→</span>
-        </div>
-
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 0.2 }}
-          className="overflow-x-auto -mx-4 px-4"
+          className="w-full overflow-hidden"
         >
-          <table className="w-full min-w-[650px] text-sm md:text-base">
+          <table className="w-full table-fixed text-[10px] sm:text-sm md:text-base border-collapse">
+            <colgroup>
+              <col className="w-[32%] sm:w-[36%]" />
+              <col className="w-[17%] sm:w-[16%]" />
+              <col className="w-[17%] sm:w-[16%]" />
+              <col className="w-[17%] sm:w-[16%]" />
+              <col className="w-[17%] sm:w-[16%]" />
+            </colgroup>
             <thead>
               <tr className="border-b border-gray-200">
-                <th className="text-left py-4 px-4 text-secondary/70 font-semibold text-sm md:text-base">{t('comparison.feature')}</th>
+                <th className="text-left py-3 px-1 sm:py-4 sm:px-4 text-secondary/70 font-semibold text-[10px] sm:text-sm md:text-base">
+                  {t('comparison.feature')}
+                </th>
                 {solutions.map((s) => (
-                  <th key={s.name} className={`py-4 px-4 text-center text-sm md:text-base font-bold ${s.name === 'SwasthyaTap' ? 'text-success bg-success/5 rounded-t-xl' : 'text-secondary/60'}`}>
+                  <th 
+                    key={s.name} 
+                    className={`py-3 px-1 sm:py-4 sm:px-4 text-center font-bold text-[10px] sm:text-sm md:text-base break-words leading-tight ${
+                      s.name === 'SwasthyaTap' ? 'text-success bg-success/5 rounded-t-xl' : 'text-secondary/60'
+                    }`}
+                  >
                     {s.name}
                   </th>
                 ))}
@@ -71,9 +80,11 @@ export default function ComparisonTable() {
             <tbody>
               {featureKeys.map((featureKey, i) => (
                 <tr key={featureKey} className="border-b border-gray-100 last:border-0 hover:bg-gray-50/50 transition-colors">
-                  <td className="py-5 px-4 text-sm md:text-base font-medium text-secondary/80">{t(featureKey)}</td>
+                  <td className="py-4 px-1 sm:py-5 sm:px-4 text-[10px] sm:text-sm md:text-base font-medium text-secondary/80 leading-snug break-words">
+                    {t(featureKey)}
+                  </td>
                   {solutions.map((s) => (
-                    <td key={s.name} className={`py-5 px-4 text-center ${s.name === 'SwasthyaTap' ? 'bg-success/5' : ''}`}>
+                    <td key={s.name} className={`py-4 px-1 sm:py-5 sm:px-4 text-center ${s.name === 'SwasthyaTap' ? 'bg-success/5' : ''}`}>
                       <StatusIcon value={s.values[i]} />
                     </td>
                   ))}

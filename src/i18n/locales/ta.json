@@ -156,17 +156,20 @@
     "encryption": "AES-256 மறையாக்கம்"
   },
   "testimonials": {
-    "title": "முக்கியமான கதைகள்",
-    "subtitle": "உண்மையான தாக்கம், உண்மையான வாழ்க்கைகள்",
-    "story1Title": "தங்க மணி நேரத்தில் காப்பாற்றுதல்",
-    "story1Quote": "ஆட்டோ ஓட்டுநர் விபத்துக்குப் பிறகு மயக்கமாக இருந்தார். ஒரு வழிப்போக்கர் அவரது ஸ்வஸ்த்யடேப் அட்டையைத் தொட, 30 விநாடிகளில் குடும்பத்தினருக்கு அறிவிக்கப்பட்டது, அவர் வருவதற்கு முன்பே மருத்துவமனை அவரது இரத்த வகையை அறிந்திருந்தது.",
-    "story1Author": "டாக்டர் மேத்தா, அதிர்ச்சி அறுவை சிகிச்சை நிபுணர்",
-    "story2Title": "ஒரு தொழிலாளியின் அடையாளம்",
-    "story2Quote": "குடிபெயர் தொழிலாளர்களுக்கு எந்தப் பதிவுகளும் இல்லை. ஸ்வஸ்த்யடேப் மூலம், மணி நேரங்களுக்குப் பதிலாக விநாடிகளில் நோயாளியை அடையாளம் கண்டோம். பீகாரில் உள்ள அவரது குடும்பத்தினருக்கு உடனடியாக அழைக்கப்பட்டது.",
-    "story2Author": "செவிலியர் பிரியா, மாவட்ட மருத்துவமனை",
-    "story3Title": "மன அமைதி",
-    "story3Quote": "என் தந்தை தனியாக வசிக்கிறார். ஏதேனும் நடந்தால் அவரது அட்டை உடனடியாக எங்களுக்கு அறிவிக்கும் என்று தெரிந்தால் முழு குடும்பத்திற்கும் மன அமைதி கிடைக்கிறது.",
-    "story3Author": "ராகுல் கே., பெங்களூரு"
+    "title": "What People Think",
+    "subtitle": "Feedback on our emergency health identity concept",
+    "story1Title": "A Game-Changer Idea",
+    "story1Quote": "As a college student who rides a bike every day, the concept of a ₹20 card that holds emergency health details and offline alerts is a game-changer. It's affordable and can actually save lives. Can't wait to order one!",
+    "story1Author": "Hardik Batwal, Student & Biker",
+    "story2Title": "Physiotherapist Approved",
+    "story2Quote": "As a physiotherapist, I see people with sports injuries and sudden physical crises daily. An offline NFC card/wristband containing vital medical details and contacts is a brilliant concept for anyone with an active lifestyle.",
+    "story2Author": "Rohan Michal, Physio Therapist",
+    "story3Title": "Great Concept for Parents",
+    "story3Quote": "My elderly parents live in another city, and I constantly worry about their safety. A tap-to-read emergency card that doesn't need any app or internet setup is the most practical solution I've seen. This idea is highly needed.",
+    "story3Author": "Aditya Sharma, Tech Professional",
+    "story4Title": "Promising Emergency Solution",
+    "story4Quote": "The idea of using cheap, accessible NFC cards to create emergency health IDs for everyone in India is incredibly promising. It bypasses internet barriers entirely. If this scales, it will redefine emergency response.",
+    "story4Author": "Kanishk Gupta, Startup Volunteer"
   },
   "cta": {
     "title": "2 நிமிடங்களில் உங்கள் ஸ்வஸ்த்யடேப் அட்டையைப் பெறுங்கள்",

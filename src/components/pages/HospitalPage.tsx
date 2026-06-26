@@ -1,11 +1,5 @@
 import { motion } from 'framer-motion';
-import { Building2, Zap, DollarSign, ArrowLeft, Check } from 'lucide-react';
-
-const plans = [
-  { name: 'Basic', price: '₹5K/mo', features: ['Patient identification', 'Emergency data access', 'Email support'] },
-  { name: 'Standard', price: '₹15K/mo', features: ['Everything in Basic', 'Blood donor API', 'SMS integration', 'Priority support'], highlight: true },
-  { name: 'Enterprise', price: '₹25K/mo', features: ['Everything in Standard', 'Custom integration', 'Dedicated manager', 'SLA guarantee'] },
-];
+import { Building2, Zap, DollarSign, ArrowLeft } from 'lucide-react';
 
 import { LanguageProvider } from '@/i18n/LanguageProvider';
 
@@ -45,25 +39,6 @@ function HospitalContent() {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-secondary mb-8 text-center">Pricing Plans</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {plans.map((plan) => (
-              <div key={plan.name} className={`p-6 rounded-card ${plan.highlight ? 'bg-primary text-white scale-105 shadow-xl' : 'bg-white shadow-sm border'}`}>
-                <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
-                <p className="text-3xl font-bold mb-6">{plan.price}</p>
-                <ul className="space-y-3 mb-6">
-                  {plan.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2 text-sm">
-                      <Check size={16} /> {f}
-                    </li>
-                  ))}
-                </ul>
-                <button className={`w-full py-3 rounded-btn font-bold ${plan.highlight ? 'bg-white text-primary' : 'bg-primary text-white'}`}>
-                  Request Demo
-                </button>
-              </div>
-            ))}
-          </div>
         </motion.div>
       </div>
     </div>
