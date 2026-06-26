@@ -37,7 +37,7 @@ function TermsContent() {
             <p>SwasthyaTap is an emergency information tool and does not replace professional medical advice, diagnosis, or treatment. We are not liable for medical decisions made based on card information.</p>
             
             <h2 className="text-xl font-bold text-secondary mt-8 mb-2">4. Card Usage</h2>
-            <p>The NFC card remains the property of Kadel Labs Pvt Ltd. One card per registered user. Cards must not be tampered with or used for purposes other than health identification.</p>
+            <p>The NFC card remains the property of SwasthyaTap. One card per registered user. Cards must not be tampered with or used for purposes other than health identification.</p>
             
             <h2 className="text-xl font-bold text-secondary mt-8 mb-2">5. Governing Law</h2>
             <p>These terms are governed by the laws of India. Any disputes shall be subject to the jurisdiction of courts in Bangalore, Karnataka.</p>

@@ -42,7 +42,7 @@ function PrivacyContent() {
             <p>You can access, modify, or delete your data at any time through your dashboard. You can deactivate your card instantly if lost or stolen.</p>
             
             <h2 className="text-xl font-bold text-secondary mt-8 mb-2">6. Contact</h2>
-            <p>For privacy concerns, contact us at privacy@swasthyatap.in or write to Kadel Labs Pvt Ltd.</p>
+            <p>For privacy concerns, contact us at privacy@swasthyatap.in or write to SwasthyaTap.</p>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ function BlogContent() {
       title: 'DPDP Act 2023: Setting a New Standard for Healthcare Privacy',
       excerpt: 'A comprehensive guide to how SwasthyaTap complies with India\'s latest personal data protection act through strict local encryption and user consent.',
       date: 'April 15, 2026',
-      author: 'Kadel Labs Privacy Team',
+      author: 'SwasthyaTap Privacy Team',
       readTime: '6 min read'
     }
   ];
@@ -49,7 +49,7 @@ function BlogContent() {
             News &amp; <span className="text-primary">Health Insights</span>
           </h1>
           <p className="max-w-2xl mx-auto text-lg text-secondary/70 leading-relaxed">
-            Latest stories, updates, and research from Kadel Labs about digital healthcare infrastructure and emergency response innovation.
+            Latest stories, updates, and research from SwasthyaTap about digital healthcare infrastructure and emergency response innovation.
           </p>
         </div>
 
