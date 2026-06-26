@@ -109,7 +109,7 @@ function ProfileContent({ uid }: { uid?: string }) {
         </div>
 
         <p className="text-center text-xs text-secondary/40 mt-4">
-          Powered by SwasthyaTap • Kadel Labs Pvt Ltd
+          Powered by SwasthyaTap
         </p>
       </motion.div>
     </div>

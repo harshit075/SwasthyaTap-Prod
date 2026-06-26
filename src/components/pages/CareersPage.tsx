@@ -31,7 +31,7 @@ function CareersContent() {
             Build the Future of <span className="text-primary">Emergency Health</span>
           </h1>
           <p className="max-w-2xl mx-auto text-lg text-secondary/70 leading-relaxed">
-            Join Kadel Labs in our mission to protect and empower 140 Crore Indian lives with secure, instant offline-first health identities.
+            Join SwasthyaTap in our mission to protect and empower 140 Crore Indian lives with secure, instant offline-first health identities.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ function CareersContent() {
                   <span className="flex items-center gap-1"><MapPin size={14} /> {job.location}</span>
                 </div>
               </div>
-              <a href="mailto:careers@kadellabs.com" className="bg-primary text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-primary/90 transition-all hover:scale-105">
+              <a href="mailto:careers@swasthyatap.in" className="bg-primary text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-primary/90 transition-all hover:scale-105">
                 Apply Now
               </a>
             </div>

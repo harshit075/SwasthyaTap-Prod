@@ -57,7 +57,7 @@ export default function Testimonials() {
           <p className="text-base text-secondary/60 max-w-2xl mx-auto italic">
             &ldquo;We believe every Indian — from a truck driver in Rajasthan to a grandmother in Kerala — deserves to be identifiable and saveable in an emergency.&rdquo;
           </p>
-          <p className="text-sm font-semibold text-secondary mt-3">— Team SwasthyaTap, Kadel Labs</p>
+          <p className="text-sm font-semibold text-secondary mt-3">— Team SwasthyaTap</p>
         </motion.div>
       </div>
     </section>

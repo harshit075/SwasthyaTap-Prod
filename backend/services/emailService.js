@@ -71,7 +71,7 @@ export async function sendWelcomeEmail(to, name, type, details) {
       </table>
       <p>If you have any urgent questions, reply directly to this email.</p>
       <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;" />
-      <p style="font-size: 12px; color: #888; text-align: center;">Powered by SwasthyaTap • Kadel Labs Pvt Ltd</p>
+      <p style="font-size: 12px; color: #888; text-align: center;">Powered by SwasthyaTap</p>
     </div>
   ` : `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
@@ -98,7 +98,7 @@ export async function sendWelcomeEmail(to, name, type, details) {
       </table>
       <p>Your SwasthyaTap card will be shipped to your address shortly.</p>
       <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;" />
-      <p style="font-size: 12px; color: #888; text-align: center;">Powered by SwasthyaTap • Kadel Labs Pvt Ltd</p>
+      <p style="font-size: 12px; color: #888; text-align: center;">Powered by SwasthyaTap</p>
     </div>
   `;
 
