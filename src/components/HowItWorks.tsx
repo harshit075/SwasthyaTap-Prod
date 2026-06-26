@@ -111,6 +111,7 @@ export default function HowItWorks() {
     return () => unsubscribe();
   }, [isMobile, scrollY]);
 
+  // Scan status animation coordinator
   useEffect(() => {
     if (isMobile) return;
     if (!isInView) {
@@ -156,7 +157,7 @@ export default function HowItWorks() {
   };
 
   return (
-    <section id="how-it-works" ref={containerRef} className="py-16 md:py-28 bg-[#FAFDFB] overflow-hidden">
+    <section id="how-it-works" ref={containerRef} className="py-16 md:py-28 bg-[#FAFDFB] overflow-hidden relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -318,7 +319,7 @@ export default function HowItWorks() {
                       times: [ 0, 0.23, 0.8, 1.0 ],
                       ease: "easeInOut"
                     }}
-                    className="absolute z-40 top-0 left-6 w-60 h-36 bg-gradient-to-br from-[#1a8080] via-[#0d5060] to-[#0a1f3a] rounded-2xl border border-white/25 p-4 flex flex-col justify-between shadow-[0_25px_60px_rgba(26,128,128,0.5)] overflow-hidden"
+                    className="absolute z-40 top-0 left-4 right-4 sm:left-6 sm:w-60 h-32 sm:h-36 bg-gradient-to-br from-[#1a8080] via-[#0d5060] to-[#0a1f3a] rounded-2xl border border-white/25 p-3 sm:p-4 flex flex-col justify-between shadow-[0_25px_60px_rgba(26,128,128,0.5)] overflow-hidden"
                   >
                     {/* Glow highlight */}
                     <div className="absolute inset-0 bg-[radial-gradient(150px_circle_at_40px_30px,rgba(100,220,200,0.18),transparent)] pointer-events-none" />

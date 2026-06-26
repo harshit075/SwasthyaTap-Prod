@@ -1,15 +1,19 @@
 'use client';
-import { motion } from 'framer-motion';
-import { lazy, Suspense, useState, useEffect, useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { lazy, Suspense, useState, useEffect } from 'react';
 import { Wifi, Shield, Clock } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageProvider';
 
 const Card3D = lazy(() => import('./Card3D'));
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  onGetFreeCardClick?: () => void;
+}
+
+export default function HeroSection({ onGetFreeCardClick }: HeroSectionProps) {
   const { t } = useLanguage();
+  const { scrollY } = useScroll();
   const [isMobile, setIsMobile] = useState(false);
-  const cardWrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -20,35 +24,22 @@ export default function HeroSection() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Lightweight scroll handler — directly mutates style, zero React re-renders
-  useEffect(() => {
-    if (!isMobile) return;
-    const el = cardWrapperRef.current;
-    if (!el) return;
-    const onScroll = () => {
-      const s = window.scrollY;
-      const progress = Math.min(s / 450, 1);
-      const y = progress * 480;
-      const scale = 1 - progress * 0.5;
-      const rotate = -progress * 10;
-      const opacity = s > 400 ? Math.max(0, 1 - (s - 400) / 60) : 1;
-      el.style.transform = `translateY(${y}px) scale(${scale}) rotate(${rotate}deg)`;
-      el.style.opacity = String(opacity);
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, [isMobile]);
+  // Mobile scroll-linked card transforms
+  const yMobile = useTransform(scrollY, [0, 450], [0, 480]);
+  const scaleMobile = useTransform(scrollY, [0, 450], [1, 0.5]);
+  const rotateMobile = useTransform(scrollY, [0, 450], [0, -10]);
+  const opacityMobile = useTransform(scrollY, [0, 400, 450, 460], [1, 1, 1, 0]);
 
   return (
-    <section className="min-h-[70vh] lg:min-h-[90vh] pt-20 pb-8 flex items-center relative lg:overflow-hidden overflow-visible">
+    <section className="min-h-[70vh] lg:min-h-[90vh] pt-20 pb-8 flex items-center relative lg:overflow-hidden overflow-visible z-20" style={{ overflow: 'visible' }}>
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(230,57,70,0.03)_0%,transparent_50%)]" />
 
       {/* Container — 90% of viewport */}
-      <div className="w-[90vw] max-w-[1600px] mx-auto relative z-10">
+      <div className="w-[90vw] max-w-[1600px] mx-auto relative z-10" style={{ overflow: 'visible' }}>
 
         {/* 2-column fluid grid: text | card */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.35fr] gap-8 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.35fr] gap-8 lg:gap-16 items-center" style={{ overflow: 'visible' }}>
 
           {/* Col 1 — Text */}
           <motion.div
@@ -89,12 +80,19 @@ export default function HeroSection() {
             </div>
 
             <div className="mt-7 flex flex-wrap gap-3">
-              <a
-                href="/register"
-                className="bg-primary text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (onGetFreeCardClick) {
+                    onGetFreeCardClick();
+                  } else {
+                    window.location.href = '/register';
+                  }
+                }}
+                className="bg-primary text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 cursor-pointer"
               >
                 {t('hero.ctaPrimary')}
-              </a>
+              </button>
               <a
                 href="#how-it-works"
                 className="border border-secondary/15 text-secondary px-6 py-3 rounded-lg font-semibold text-sm hover:bg-secondary/5 transition-all"
@@ -109,10 +107,10 @@ export default function HeroSection() {
             className="flex-1 w-full flex flex-col justify-center items-center relative select-none"
             style={{
               height: 'clamp(220px, min(38vw, 55vh), 560px)',
+              overflow: 'visible'
             }}
           >
-            <div
-              ref={cardWrapperRef}
+            <motion.div
               style={{
                 width: '100%',
                 height: '100%',
@@ -120,11 +118,14 @@ export default function HeroSection() {
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
+                y: isMobile ? yMobile : 0,
+                scale: isMobile ? scaleMobile : 1,
+                rotate: isMobile ? rotateMobile : 0,
+                opacity: isMobile ? opacityMobile : 1,
                 zIndex: isMobile ? 50 : undefined,
-                willChange: isMobile ? 'transform, opacity' : undefined,
               }}
             >
-              <div style={{ width: '100%', height: '100%' }}>
+              <div style={{ width: '100%', height: '100%', overflow: 'visible' }}>
                 <Suspense
                   fallback={
                     <div className="w-full h-full flex items-center justify-center">
@@ -138,7 +139,7 @@ export default function HeroSection() {
               <p className="text-center text-[11px] text-secondary/35 mt-3 tracking-wide">
                 {t('hero.dragHint')}
               </p>
-            </div>
+            </motion.div>
           </div>
 
         </div>

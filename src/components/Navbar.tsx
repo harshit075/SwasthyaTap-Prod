@@ -5,7 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/i18n/LanguageProvider';
 import LanguageSwitcher from './LanguageSwitcher';
 
-export default function Navbar() {
+interface NavbarProps {
+  onGetFreeCardClick?: () => void;
+}
+
+export default function Navbar({ onGetFreeCardClick }: NavbarProps) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { t } = useLanguage();
@@ -15,6 +19,15 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleGetFreeCard = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (onGetFreeCardClick) {
+      onGetFreeCardClick();
+    } else {
+      window.location.href = '/?register=true';
+    }
+  };
 
   const navLinks = [
     { href: '/#features', label: t('nav.features') },
@@ -44,12 +57,12 @@ export default function Navbar() {
               </a>
             ))}
             <LanguageSwitcher />
-            <a
-              href="/register"
-              className="bg-primary text-white px-5 py-2.5 rounded-btn font-semibold text-sm hover:bg-primary/90 transition-all hover:scale-105 shadow-md shadow-primary/20"
+            <button
+              onClick={handleGetFreeCard}
+              className="bg-primary text-white px-5 py-2.5 rounded-btn font-semibold text-sm hover:bg-primary/90 transition-all hover:scale-105 shadow-md shadow-primary/20 cursor-pointer"
             >
               {t('nav.getFreeCard')}
-            </a>
+            </button>
           </div>
           <div className="flex items-center gap-2 md:hidden">
             <LanguageSwitcher />
@@ -82,12 +95,15 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="/register"
-                className="block bg-primary text-white px-5 py-2.5 rounded-btn font-semibold text-center mt-2"
+              <button
+                onClick={(e) => {
+                  setOpen(false);
+                  handleGetFreeCard(e);
+                }}
+                className="block w-full bg-primary text-white px-5 py-2.5 rounded-btn font-semibold text-center mt-2 cursor-pointer"
               >
                 {t('nav.getFreeCard')}
-              </a>
+              </button>
             </div>
           </motion.div>
         )}

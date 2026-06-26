@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import ChatWidget from '../components/chatbot/ChatWidget';
 
 interface Props {
 	title?: string;
@@ -43,5 +44,6 @@ const {
 	</head>
 	<body class="antialiased bg-background text-foreground">
 		<slot />
+		<ChatWidget client:load />
 	</body>
 </html>

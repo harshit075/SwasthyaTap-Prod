@@ -9,7 +9,7 @@ export default function Footer() {
     [t('footer.product')]: [
       { label: t('footer.features'), href: '/#features' },
       { label: t('footer.bloodNetwork'), href: '/#blood-network' },
-      { label: t('footer.forHospitals'), href: '/#hospital' },
+      { label: t('footer.forHospitals'), href: '/hospital' },
     ],
     [t('footer.company')]: [
       { label: t('footer.about'), href: '/about' },

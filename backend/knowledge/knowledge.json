@@ -1,0 +1,141 @@
+{
+  "websiteName": "SwasthyaTap",
+  "tagline": "India's NFC-Based Universal Emergency Health Identity Platform",
+  "about": "SwasthyaTap is an innovative health identity platform offering a ₹20 NFC-enabled card that acts as a life-saving tool during medical emergencies (the Golden Hour). By tapping the card with any NFC-enabled smartphone, a bystander, first responder, or doctor can instantly see critical, life-saving information about the cardholder without needing any application or active internet connection. The system also instantly alerts the user's family with their live GPS location.",
+  "features": [
+    {
+      "name": "Emergency Health ID",
+      "description": "Provides instant access to essential medical parameters like name, blood group, chronic conditions, severe allergies, and active medications."
+    },
+    {
+      "name": "Works Offline",
+      "description": "Critical emergency data is stored directly on the physical NFC chip, enabling retrieval even in remote areas with zero network coverage."
+    },
+    {
+      "name": "Instant Family Alerts (SOS)",
+      "description": "A single tap of the 'Alert Family' button triggers SMS notifications sent to pre-configured emergency contacts containing a live GPS tracking link."
+    },
+    {
+      "name": "Blood Donor Network",
+      "description": "A localized network matching patients with compatible blood donors within a 5km radius, coordinate confirmations via SMS, and facilitates blood arrival within 30 minutes."
+    },
+    {
+      "name": "Organ Donation Consent",
+      "description": "Stores legally verifiable organ donation preferences directly on the card for quick access during critical moments."
+    },
+    {
+      "name": "Multilingual Support",
+      "description": "Supports multiple Indian languages including Hindi, English, Bengali, Telugu, Marathi, Tamil, Gujarati, Kannada, Malayalam, Odia, Punjabi, Assamese, and Urdu."
+    },
+    {
+      "name": "Privacy Protected",
+      "description": "Sensitive details (full reports, medical history) are locked behind a secure 4-digit PIN, while basic life-saving details (blood group, allergies) remain publicly accessible to first responders."
+    },
+    {
+      "name": "No Mobile App Required",
+      "description": "Operates using native NFC technology and opens directly in the smartphone's default web browser. No custom apps need to be installed."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Register Online",
+      "description": "Go to the Register page on the website, enter your phone number, and complete the OTP verification."
+    },
+    {
+      "title": "Fill Health Profile",
+      "description": "Input basic emergency details (Name, Date of Birth, Blood Group, Allergies, and pre-existing medical conditions)."
+    },
+    {
+      "title": "Set Emergency Contacts",
+      "description": "Add phone numbers of family members or friends who should be notified during an emergency."
+    },
+    {
+      "title": "Choose Card Option",
+      "description": "Choose between a free standard PVC card, a premium metal card, an NFC wristband, or an NFC ring."
+    },
+    {
+      "title": "Receive and Program",
+      "description": "Once the card is delivered, it is ready to use. You can also self-program it with your unique ID."
+    }
+  ],
+  "pricing": [
+    {
+      "item": "Standard PVC Card",
+      "price": "FREE",
+      "features": ["NFC enabled", "Basic health info", "Emergency alerts"]
+    },
+    {
+      "item": "Premium Metal Card",
+      "price": "₹499",
+      "features": ["All standard features", "Metal build", "Laser engraved"]
+    },
+    {
+      "item": "NFC Wristband",
+      "price": "₹299",
+      "features": ["Waterproof", "Adjustable size", "Durable silicone", "Best for seniors/children"]
+    },
+    {
+      "item": "NFC Ring",
+      "price": "₹999",
+      "features": ["Titanium/ceramic build", "Waterproof", "Stylish and always wearable"]
+    },
+    {
+      "item": "Family Pack (4 Cards)",
+      "price": "₹299",
+      "features": ["4 PVC cards", "Family dashboard", "Group alert settings"]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How does the card work in an emergency?",
+      "answer": "If you are unconscious or unable to speak, a bystander or first responder can tap your SwasthyaTap card with their NFC-enabled smartphone. This opens a secure webpage showing your blood group, emergency contacts, and allergies. They can also press 'Alert Family' to dispatch your live GPS location to your family."
+    },
+    {
+      "question": "Is my data secure?",
+      "answer": "Yes. SwasthyaTap uses AES-256 encryption. Basic emergency info (like blood group and emergency contacts) is public for saving your life. Sensitive medical records, documents, and history are locked behind a secure 4-digit PIN that only you or authorized medical staff can access."
+    },
+    {
+      "question": "Does it require internet to read the card?",
+      "answer": "No. The critical life-saving information is stored directly on the card's offline NFC chip, allowing first responders to view it even when internet coverage is unavailable."
+    },
+    {
+      "question": "Do I need to download an app to use SwasthyaTap?",
+      "answer": "No app is required. It works on any modern iPhone or Android smartphone with NFC. Tapping the card automatically opens the browser to view the profile."
+    },
+    {
+      "question": "How do I register as a blood donor?",
+      "answer": "You can sign up on our website's 'Blood Network' section. When a local hospital requires blood, our automated system searches for matching donors within a 5km radius and coordinates confirmations via SMS."
+    },
+    {
+      "question": "What is the cost of the card?",
+      "answer": "The Standard PVC Card is completely FREE to ensure every citizen can access emergency identification. Premium metal cards, wristbands, and rings are available starting from ₹299."
+    }
+  ],
+  "policies": [
+    {
+      "name": "Privacy Policy",
+      "content": "All personal health data is processed in compliance with the DPDP (Digital Personal Data Protection) Act 2023. User data is stored on secure AWS servers in Mumbai, India. Users retain full ownership and control of their data, with options to update or delete records at any time."
+    },
+    {
+      "name": "Terms of Service",
+      "content": "The NFC card is issued to the registered cardholder. One card per registered user. Users are responsible for maintaining accurate contact details. SwasthyaTap is not liable for incorrect details entered by the user."
+    }
+  ],
+  "contact": {
+    "email": "support@swasthtap.in",
+    "tollFree": "1800-121-4536",
+    "address": "SwasthyaTap HQ, Bengaluru, Karnataka, India"
+  },
+  "founders": [
+    {
+      "name": "Aditya Chhipa",
+      "role": "Tech Lead",
+      "description": "Architects the system's secure offline-first NFC protocols and decentralized health identity structure."
+    },
+    {
+      "name": "Harshit Borana",
+      "role": "Product Lead",
+      "description": "Manages hospital integrations, strategy, and partnerships to scale the emergency response network."
+    }
+  ]
+}

@@ -7,28 +7,7 @@ import { useLanguage } from '@/i18n/LanguageProvider';
 export default function HospitalSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
-  const { t, tArray } = useLanguage();
-
-  const plans = [
-    {
-      nameKey: 'hospital.basic',
-      price: '₹5K/mo',
-      featuresKey: 'hospital.basicFeatures',
-      highlight: false,
-    },
-    {
-      nameKey: 'hospital.standard',
-      price: '₹15K/mo',
-      featuresKey: 'hospital.standardFeatures',
-      highlight: true,
-    },
-    {
-      nameKey: 'hospital.enterprise',
-      price: '₹25K/mo',
-      featuresKey: 'hospital.enterpriseFeatures',
-      highlight: false,
-    },
-  ];
+  const { t } = useLanguage();
 
   return (
     <section id="hospital" className="py-16 md:py-24 bg-secondary/5">
@@ -59,32 +38,13 @@ export default function HospitalSection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {plans.map((plan, i) => {
-            const features = tArray(plan.featuresKey);
-            return (
-              <motion.div
-                key={plan.nameKey}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: i * 0.15 }}
-                className={`p-6 rounded-card ${plan.highlight ? 'bg-primary text-white md:scale-105 shadow-xl' : 'bg-white shadow-sm border border-gray-100'}`}
-              >
-                <h3 className="text-xl font-bold mb-2">{t(plan.nameKey)}</h3>
-                <p className="text-3xl font-bold mb-4">{plan.price}</p>
-                <ul className="space-y-2 mb-6">
-                  {features.map((f) => (
-                    <li key={f} className="text-sm flex items-center gap-2">
-                      <span>✓</span> {f}
-                    </li>
-                  ))}
-                </ul>
-                <button className={`w-full py-2 rounded-btn font-bold ${plan.highlight ? 'bg-white text-primary' : 'bg-primary text-white'} hover:scale-105 transition-transform`}>
-                  {t('hospital.requestDemo')}
-                </button>
-              </motion.div>
-            );
-          })}
+        <div className="flex justify-center mt-8">
+          <a
+            href="mailto:support@swasthtap.in?subject=Hospital Partnership Request"
+            className="bg-primary text-white px-8 py-3.5 rounded-btn font-bold text-sm hover:bg-primary/90 transition-all hover:scale-105 shadow-md shadow-primary/20"
+          >
+            {t('hospital.requestDemo')}
+          </a>
         </div>
       </div>
     </section>

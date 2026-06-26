@@ -156,17 +156,20 @@
     "encryption": "AES-256 ఎన్‌క్రిప్షన్"
   },
   "testimonials": {
-    "title": "ముఖ్యమైన కథలు",
-    "subtitle": "నిజమైన ప్రభావం, నిజమైన జీవితాలు",
-    "story1Title": "గోల్డెన్ అవర్ రక్షణ",
-    "story1Quote": "ఆటో డ్రైవర్ ప్రమాదం తర్వాత స్పృహ లేకుండా ఉన్నాడు. ఒక బాటసారి అతని స్వస్థ్యట్యాప్ కార్డ్ ట్యాప్ చేశాడు, 30 సెకన్లలో కుటుంబానికి తెలియజేయబడింది.",
-    "story1Author": "డా. మెహతా, ట్రామా సర్జన్",
-    "story2Title": "ఒక కార్మికుడి గుర్తింపు",
-    "story2Quote": "వలస కార్మికులకు రికార్డులు ఉండవు. స్వస్థ్యట్యాప్‌తో, గంటలకు బదులు సెకన్లలో రోగిని గుర్తించాము.",
-    "story2Author": "నర్స్ ప్రియ, జిల్లా ఆసుపత్రి",
-    "story3Title": "మానసిక ప్రశాంతత",
-    "story3Quote": "నాన్న ఒంటరిగా ఉంటారు. ఏదైనా జరిగితే అతని కార్డ్ వెంటనే మాకు తెలియజేస్తుందని తెలిసి మొత్తం కుటుంబానికి ప్రశాంతత.",
-    "story3Author": "రాహుల్ కె., బెంగళూరు"
+    "title": "What People Think",
+    "subtitle": "Feedback on our emergency health identity concept",
+    "story1Title": "A Game-Changer Idea",
+    "story1Quote": "As a college student who rides a bike every day, the concept of a ₹20 card that holds emergency health details and offline alerts is a game-changer. It's affordable and can actually save lives. Can't wait to order one!",
+    "story1Author": "Hardik Batwal, Student & Biker",
+    "story2Title": "Physiotherapist Approved",
+    "story2Quote": "As a physiotherapist, I see people with sports injuries and sudden physical crises daily. An offline NFC card/wristband containing vital medical details and contacts is a brilliant concept for anyone with an active lifestyle.",
+    "story2Author": "Rohan Michal, Physio Therapist",
+    "story3Title": "Great Concept for Parents",
+    "story3Quote": "My elderly parents live in another city, and I constantly worry about their safety. A tap-to-read emergency card that doesn't need any app or internet setup is the most practical solution I've seen. This idea is highly needed.",
+    "story3Author": "Aditya Sharma, Tech Professional",
+    "story4Title": "Promising Emergency Solution",
+    "story4Quote": "The idea of using cheap, accessible NFC cards to create emergency health IDs for everyone in India is incredibly promising. It bypasses internet barriers entirely. If this scales, it will redefine emergency response.",
+    "story4Author": "Kanishk Gupta, Startup Volunteer"
   },
   "cta": {
     "title": "2 నిమిషాల్లో మీ స్వస్థ్యట్యాప్ కార్డ్ పొందండి",

@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "1782467230588",
+      "name": "Rahul Sharma",
+      "email": "rahul@example.com",
+      "phone": "9988776655",
+      "bloodGroup": "B+",
+      "allergies": "None",
+      "medications": "None",
+      "conditions": "None",
+      "contacts": {},
+      "cardType": "free",
+      "createdAt": "2026-06-26T09:47:10.588Z"
+    },
+    {
+      "id": "1782467607345",
+      "name": "Rahul Sharma",
+      "email": "rahul@example.com",
+      "phone": "9988776655",
+      "bloodGroup": "B+",
+      "allergies": "None",
+      "medications": "None",
+      "conditions": "None",
+      "contacts": {},
+      "cardType": "free",
+      "createdAt": "2026-06-26T09:53:27.345Z"
+    }
+  ],
+  "hospitals": [
+    {
+      "id": "1782467224815",
+      "hospitalName": "Test Hospital",
+      "contactName": "Dr. Test",
+      "email": "test@example.com",
+      "phone": "9876543210",
+      "city": "Test City",
+      "licenseId": "TEST-123",
+      "beds": "100",
+      "createdAt": "2026-06-26T09:47:04.815Z"
+    },
+    {
+      "id": "1782467338705",
+      "hospitalName": "hoa",
+      "contactName": "ads",
+      "email": "ad@g.com",
+      "phone": "1234567890",
+      "city": "mi",
+      "licenseId": "asda",
+      "beds": "140",
+      "createdAt": "2026-06-26T09:48:58.705Z"
+    }
+  ]
+}

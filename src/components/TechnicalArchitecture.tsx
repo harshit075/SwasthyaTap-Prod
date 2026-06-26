@@ -18,20 +18,14 @@ export default function TechnicalArchitecture() {
           <h4 className="font-bold text-secondary mb-6 text-center text-sm tracking-wider uppercase opacity-80">
             Universal Health Identity Sync Flow
           </h4>
-          <div className="text-[10px] text-secondary/40 font-bold uppercase tracking-widest mb-3 md:hidden flex items-center gap-1.5 select-none">
-            <span>Swipe horizontally to view flow</span>
-            <span className="animate-bounce">→</span>
-          </div>
-          <div className="w-full overflow-x-auto pb-2 -mx-4 px-4 scrollbar-hide">
-            <div className="min-w-[700px] md:min-w-0 w-full relative flex justify-center">
-              <img
-                src={ProcessImage.src || ProcessImage}
-                alt="SwasthyaTap complete process flow"
-                width={1400}
-                height={700}
-                className="rounded-2xl shadow-sm object-contain w-full"
-              />
-            </div>
+          <div className="w-full relative flex justify-center">
+            <img
+              src={ProcessImage.src || ProcessImage}
+              alt="SwasthyaTap complete process flow"
+              width={1400}
+              height={700}
+              className="rounded-2xl shadow-sm object-contain w-full h-auto"
+            />
           </div>
         </div>
       </div>
