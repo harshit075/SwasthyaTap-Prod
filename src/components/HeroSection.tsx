@@ -1,8 +1,9 @@
 'use client';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { lazy, Suspense, useState, useEffect } from 'react';
-import { Wifi, Shield, Clock } from 'lucide-react';
+import { Wifi, Shield, Clock, Download } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageProvider';
+import { APP_DOWNLOAD_URL } from '@/constants/app';
 
 const Card3D = lazy(() => import('./Card3D'));
 
@@ -98,6 +99,15 @@ export default function HeroSection({ onGetFreeCardClick }: HeroSectionProps) {
                 className="border border-secondary/15 text-secondary px-6 py-3 rounded-lg font-semibold text-sm hover:bg-secondary/5 transition-all"
               >
                 {t('hero.ctaSecondary')}
+              </a>
+              <a
+                href={APP_DOWNLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-secondary/15 text-secondary px-6 py-3 rounded-lg font-semibold text-sm hover:bg-secondary/5 transition-all"
+              >
+                <Download size={16} />
+                {t('hero.ctaDownloadApp')}
               </a>
             </div>
           </motion.div>

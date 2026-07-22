@@ -9,10 +9,10 @@ import nodemailer from 'nodemailer';
  */
 export async function sendWelcomeEmail(to, name, type, details) {
   console.log(`Sending welcome email to ${to} (${name}) of type ${type}`);
-  
+
   // Set up transport
   let transporter;
-  
+
   if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
     // Real SMTP configuration from environment variables
     transporter = nodemailer.createTransport({
@@ -41,7 +41,7 @@ export async function sendWelcomeEmail(to, name, type, details) {
   }
 
   const isHospital = type === 'hospital';
-  const subject = isHospital 
+  const subject = isHospital
     ? 'Welcome to SwasthyaTap — Hospital Partnership Initiated'
     : 'Welcome to SwasthyaTap — Your Health ID Profile is Ready';
 

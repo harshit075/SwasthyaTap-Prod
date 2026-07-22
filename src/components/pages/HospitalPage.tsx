@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Building2, Zap, DollarSign, ArrowLeft } from 'lucide-react';
 
 import { LanguageProvider } from '@/i18n/LanguageProvider';
-
+// hii
 function HospitalContent() {
   return (
     <div className="min-h-screen bg-background">
